@@ -29,8 +29,9 @@ public class selector {
         locatefilter.click();
         WebElement openfilter = driver.findElement(By.xpath("//select[@data-qa-selector='select'and@name='"+type+"Range.max']"));
         openfilter.click();
-        WebElement choosevaluefilter = driver.findElement(By.xpath("//option[@data-qa-selector-value='"+value.sortmaxvalue(driver, By.className("option___2yqJT"))+"']"));
+        WebElement choosevaluefilter = driver.findElement(By.xpath("//option[@data-qa-selector-value='"+value.sortmaxvalue(driver, By.xpath("//select[@data-qa-selector='select'and@name='priceRange.max']//option"))+"']"));
         choosevaluefilter.click();
+        openfilter.click();
     }
 
 
