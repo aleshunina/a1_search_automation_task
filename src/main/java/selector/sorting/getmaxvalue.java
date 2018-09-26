@@ -3,29 +3,28 @@ package selector.sorting;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by daleshun on 25.09.2018.
- */
 public class getmaxvalue {
-
-
 
     public String sortmaxvalue(WebDriver driver, By elementslistlocator){
 
         List<WebElement> myList=driver.findElements(elementslistlocator);
         List<String> all_elements_text=new ArrayList<String>();
 
-        for(int i=0; i<myList.size(); i++){
 
-            all_elements_text.add(myList.get(i).getText());
-            System.out.println(myList.get(i).getText());
+        for(int i=1; i<myList.size(); i++){
+            all_elements_text.add(myList.get(i).getAttribute("data-qa-selector-value"));
         }
-        String biggestvalue = Collections.max(all_elements_text);
+
+        List<Integer> all_elements_int = new ArrayList<Integer>(all_elements_text.size());
+        for(String current:all_elements_text){
+            all_elements_int.add(Integer.parseInt(current));
+        }
+
+        String biggestvalue = Collections.max(all_elements_int).toString();
         return biggestvalue;
     }
 }
