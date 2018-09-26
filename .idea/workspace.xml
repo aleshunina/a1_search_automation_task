@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="207d5808-0442-4d39-b615-5a9eb469f52a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/popup/Modal.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/popup/popup.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/popup/popup.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/testExecutor.class" afterPath="$PROJECT_DIR$/target/classes/testExecutor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/searchFuncTest.java" afterPath="$PROJECT_DIR$/src/main/java/searchFuncTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/testExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/testExecutor.java" />
@@ -30,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testExecutor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testExecutor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/testExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+            <state relative-caret-position="378">
+              <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,15 +46,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchFuncTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="searchFuncTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/searchFuncTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="39" column="117" lean-forward="false" selection-start-line="39" selection-start-column="117" selection-end-line="39" selection-end-column="117" />
+            <state relative-caret-position="432">
+              <caret line="37" column="58" lean-forward="true" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1567#1568#0" expanded="true" />
-                <element signature="e#1596#1597#0" expanded="true" />
+                <element signature="e#1323#1324#0" expanded="true" />
+                <element signature="e#1352#1353#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Modal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/popup/Modal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,7 +85,7 @@
       <file leaf-file-name="Selector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/selector/Selector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="432">
               <caret line="16" column="58" lean-forward="false" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -121,8 +137,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/selector/Selector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/testExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/searchFuncTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/popup/Modal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/testExecutor.java" />
       </list>
     </option>
   </component>
@@ -255,7 +272,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml">
+  <component name="RunManager" selected="Application.testExecutor">
     <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="testtask_autohero" />
@@ -580,19 +597,17 @@
       <option name="project" value="LOCAL" />
       <updated>1537963906497</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit testng">
+      <created>1537965681041</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537965681041</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.26 at 14h 45m 33s.xml">
-      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.26 at 14h 51m 24s.xml">
-      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.26 at 15h 01m 23s.xml">
-      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.26 at 15h 07m 58s.xml">
       <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -612,6 +627,15 @@
       <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.26 at 15h 40m 55s.xml">
+      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.26 at 15h 50m 00s.xml">
+      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.26 at 15h 50m 33s.xml">
+      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.26 at 15h 51m 07s.xml">
       <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -840,16 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/testExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/selector/sorting/getmaxvalue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -864,7 +878,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/selector/Selector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="432">
           <caret line="16" column="58" lean-forward="false" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -880,14 +894,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/searchFuncTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/popup/Modal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="39" column="117" lean-forward="false" selection-start-line="39" selection-start-column="117" selection-end-line="39" selection-end-column="117" />
+        <state relative-caret-position="371">
+          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1567#1568#0" expanded="true" />
-            <element signature="e#1596#1597#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/searchFuncTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="37" column="58" lean-forward="true" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1323#1324#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/testExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

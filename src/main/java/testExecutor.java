@@ -1,11 +1,9 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import popup.Modal;
 import selector.Selector;
 
 
@@ -31,8 +29,7 @@ public static void main(String[] args) throws InterruptedException {
         }
 
         catch (NoSuchElementException ex){
-            WebElement modal = driver.findElement(By.xpath("//button[@class='close'and@type='button']"));
-            modal.click();
+            Modal modal=new Modal().dealwithmodal(driver);
         }
 
 

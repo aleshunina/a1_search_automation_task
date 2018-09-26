@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import popup.Modal;
 import selector.Selector;
 
 
@@ -34,11 +35,7 @@ public class searchFuncTest {
         }
         catch (NoSuchElementException ex){
 
-            WebElement modal = driver.findElement(By.xpath("//button[@class='close'and@type='button']"));
-            modal.click();
-            WebElement filter = (new WebDriverWait(driver, 10))
-                    .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-qa-selector='filter-year']")));
-
+            Modal modal=new Modal().dealwithmodal(driver);
         }
 
     }
