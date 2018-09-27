@@ -1,14 +1,12 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.SearchPage;
 import popup.Modal;
-import selector.Selector;
+
 
 
 public class searchFuncTest {
@@ -18,12 +16,13 @@ public class searchFuncTest {
     @BeforeTest
     public void initialize(){
         driver = new FirefoxDriver();
+        System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
         driver.get(URL);
     }
 
     @Test
     public void searchSortFilterTest(){
-        
+
         try {
             SearchPage searchPage=new SearchPage(driver);
 
