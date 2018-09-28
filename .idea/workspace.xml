@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="207d5808-0442-4d39-b615-5a9eb469f52a" name="Default" comment="commit page object">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/geckodriver.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/selector/testExecutor.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/testExecutor.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/testExecutor.class" afterPath="$PROJECT_DIR$/target/classes/testExecutor.class" />
+    <list default="true" id="207d5808-0442-4d39-b615-5a9eb469f52a" name="Default" comment="commit refactor">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/chromedriver.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/selector/Selector.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/selector/sorting/getmaxvalue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/selector/testExecutor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/selector/selector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/selector/sorting/getmaxvalue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/testExecutor.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manual_tests.xlsx" afterPath="$PROJECT_DIR$/manual_tests.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/searchFuncTest.java" afterPath="$PROJECT_DIR$/src/main/java/searchFuncTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/testng.xml" afterPath="$PROJECT_DIR$/src/main/java/testng.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,21 +30,9 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="344">
               <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testExecutor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/selector/testExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -50,54 +40,22 @@
       <file leaf-file-name="searchFuncTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/searchFuncTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-297">
-              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state relative-caret-position="556">
+              <caret line="27" column="57" lean-forward="false" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1122#1123#0" expanded="true" />
+                <element signature="e#1151#1152#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Selector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/selector/Selector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SearchPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/SearchPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getmaxvalue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/selector/sorting/getmaxvalue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+            <state relative-caret-position="427">
+              <caret line="75" column="45" lean-forward="false" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,14 +90,18 @@
         <option value="$PROJECT_DIR$/src/main/java/selector/selector.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/selector/Selector.java" />
         <option value="$PROJECT_DIR$/src/main/java/popup/Modal.java" />
         <option value="$PROJECT_DIR$/src/main/java/testExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageElements/Filter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/SearchPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/searchFuncTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/selector/testExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/selector/Selector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/selector/sorting/ElementMaxValue.java" />
+        <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/ElementMaxValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/WaitUntilLocated.java" />
+        <option value="$PROJECT_DIR$/src/main/java/searchFuncTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/SearchPage.java" />
       </list>
     </option>
   </component>
@@ -618,38 +580,66 @@
       <option name="project" value="LOCAL" />
       <updated>1538052503624</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit page object">
+      <created>1538055976255</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1538055976255</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit refactor">
+      <created>1538134363361</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1538134363361</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit refactor">
+      <created>1538138851620</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1538138851620</updated>
+    </task>
+    <task id="LOCAL-00009" summary="commit refactor">
+      <created>1538145021346</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1538145021346</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.26 at 15h 40m 55s.xml">
-      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.26 at 15h 50m 00s.xml">
-      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.26 at 15h 50m 33s.xml">
-      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.26 at 15h 51m 07s.xml">
-      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.27 at 15h 45m 31s.xml">
-      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.27 at 16h 16m 53s.xml">
-      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.27 at 16h 24m 01s.xml">
-      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.27 at 16h 25m 59s.xml">
-      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.27 at 16h 27m 16s.xml">
-      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.27 at 16h 31m 08s.xml">
+      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.28 at 13h 05m 58s.xml">
+      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.28 at 15h 18m 27s.xml">
+      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.28 at 15h 19m 15s.xml">
+      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.28 at 15h 21m 56s.xml">
+      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.28 at 15h 22m 16s.xml">
+      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.28 at 15h 23m 34s.xml">
+      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.28 at 15h 23m 58s.xml">
+      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.28 at 15h 31m 45s.xml">
+      <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_daleshun_Documents_homework_a1_a1_search_automation_task_src_main_java_testng_xml - 2018.09.28 at 15h 47m 00s.xml">
       <configuration name="C:/Users/daleshun/Documents/homework_a1/a1_search_automation_task/src/main/java/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -670,6 +660,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.253125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923368" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -683,7 +674,6 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -695,11 +685,12 @@
     <MESSAGE value="commit modal" />
     <MESSAGE value="commit pageObject" />
     <MESSAGE value="commit page object" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit page object" />
+    <MESSAGE value="commit refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -727,6 +718,8 @@
           <caret line="37" column="58" lean-forward="true" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -736,7 +729,7 @@
         <state relative-caret-position="270">
           <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -753,13 +746,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="16" column="58" lean-forward="false" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selector/sorting/getmaxvalue.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/ElementMaxValue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
@@ -773,9 +764,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -787,7 +776,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selector/sorting/getmaxvalue.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/ElementMaxValue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -801,9 +790,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -811,9 +798,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -905,29 +890,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selector/sorting/getmaxvalue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -939,58 +906,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/SearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/popup/Modal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/searchFuncTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/selector/Selector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="270">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/selector/testExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="54" lean-forward="true" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/WaitUntilLocated.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/ElementMaxValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selector/testExecutor.java">
+    <entry file="file://$PROJECT_DIR$/editor.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-browsers.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/searchFuncTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="27" column="57" lean-forward="false" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/SearchPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="75" column="45" lean-forward="false" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

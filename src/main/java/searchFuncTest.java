@@ -6,10 +6,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.SearchPage;
 import popup.Modal;
-
-
+import utility.ElementMaxValue;
 
 public class searchFuncTest {
+
     public static final String URL="https://www.autohero.com/de/search/";
     WebDriver driver;
 
@@ -24,16 +24,20 @@ public class searchFuncTest {
     public void searchSortFilterTest(){
 
         try {
+
             SearchPage searchPage=new SearchPage(driver);
 
             searchPage.filterByYear("2015");
-            Assert.assertTrue(driver.findElement(By.xpath("//li[@data-qa-selector-value='2015'and@data-qa-selector='active-filter']")).isDisplayed());
+            searchPage.assertPriceFilterPresence("2015");
 
             searchPage.filterByBiggestPrice();
-            Assert.assertTrue(driver.findElement(By.xpath("//li[@data-qa-selector-value='100.000'and@data-qa-selector='active-filter']")).isDisplayed());
+            searchPage.assertPriceFilterPresence("100.000");
+
         }
-        catch (NoSuchElementException ex){
-            Modal modal=new Modal().dealwithmodal(driver);
+        catch (Exception ex){
+
+            Modal modal = new Modal().dealwithmodal(driver);
+
         }
 
     }
