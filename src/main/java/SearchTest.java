@@ -8,10 +8,10 @@ import pages.SearchPage;
 import popup.Modal;
 import utility.ElementMaxValue;
 
-public class searchFuncTest {
+public class SearchTest {
 
-    public static final String URL="https://www.autohero.com/de/search/";
-    WebDriver driver;
+    private static final String URL="https://www.autohero.com/de/search/";
+    private WebDriver driver;
 
     @BeforeTest
     public void initialize(){
@@ -23,24 +23,24 @@ public class searchFuncTest {
     @Test
     public void searchSortFilterTest(){
 
-        try {
+        //try {
 
             SearchPage searchPage=new SearchPage(driver);
 
             searchPage.filterByYear("2015");
-            searchPage.assertPriceFilterPresence("2015");
+            searchPage.assertYearFilterPresence("2015");
 
             searchPage.filterByBiggestPrice();
             searchPage.assertPriceFilterPresence("100.000");
 
         }
-        catch (Exception ex){
+        //catch (ElementNotInteractableException ex){
 
-            Modal modal = new Modal().dealwithmodal(driver);
+            //Modal modal = new Modal().dealwithmodal(driver);
 
-        }
+        //}
 
-    }
+    //}
 
     @AfterTest
     public void endSession(){
