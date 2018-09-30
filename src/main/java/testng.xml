@@ -2,7 +2,7 @@
 <suite name="Search Page Tests">
     <test name="Search Function Test ">
         <classes>
-            <class name="searchFuncTest" />
+            <class name="SearchTest" />
         </classes>
     </test>
 </suite>

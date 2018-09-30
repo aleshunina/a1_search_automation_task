@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,12 +9,14 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import page_elements.Filter;
 import utility.ElementMaxValue;
 
 public class SearchPage {
 
     private static final String URL="https://www.autohero.com/de/search/";
     private WebDriver driver;
+
     @FindBy(xpath = "//div[@data-qa-selector='filter-year']")
     private WebElement yearFilter;
 
@@ -38,18 +41,21 @@ public class SearchPage {
 
         PageFactory.initElements(driver, this);
         this.driver = driver;
+
     }
 
     public SearchPage filterByYear(String year){
 
-        yearFilter.click();
-        yearFilterSelector.click();
-        WebElement choosevaluefilter = driver.findElement(By.xpath("//option[@data-qa-selector-value='"+year+"']"));
-        choosevaluefilter.click();
-        yearFilterSelector.click();
+        Filter filter=new Filter();
 
-        WebElement waiter = (new WebDriverWait(driver, 10))
-                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[@data-qa-selector-value='"+year+"'and@data-qa-selector='active-filter']")));
+        filter.waitAndClick(yearFilter, driver);
+        filter.waitAndClick(yearFilterSelector, driver);
+        WebElement choosevaluefilter = driver.findElement(By.xpath("//option[@data-qa-selector-value='"+year+"']"));
+        filter.waitAndClick(choosevaluefilter, driver);
+        filter.waitAndClick(yearFilterSelector, driver);
+
+        By filterbanner=By.xpath("//li[@data-qa-selector-value='"+year+"'and@data-qa-selector='active-filter']");
+        filter.presenceOfElementLocated(filterbanner, driver);
 
         return new SearchPage(driver);
 
@@ -58,30 +64,30 @@ public class SearchPage {
     public SearchPage filterByBiggestPrice () {
 
         ElementMaxValue value = new ElementMaxValue();
+        Filter filter = new Filter();
 
-        priceFilter.click();
-        priceFilterSelector.click();
+        filter.waitAndClick(priceFilter, driver);
+        filter.waitAndClick(priceFilterSelector, driver);
         WebElement choosevaluefilter = driver.findElement(By.xpath("//option[@data-qa-selector-value='"+value.sortmaxvalue(driver, By.xpath("//select[@data-qa-selector='select'and@name='priceRange.max']//option"))+"']"));
-        choosevaluefilter.click();
-        priceFilterSelector.click();
-        WebElement waiter = (new WebDriverWait(driver, 10))
-                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[@data-qa-selector-value='100.000'and@data-qa-selector='active-filter']")));
+        filter.waitAndClick(choosevaluefilter, driver);
+        filter.waitAndClick(priceFilterSelector, driver);
+
+        By filterbanner=By.xpath("//li[@data-qa-selector-value='100.000'and@data-qa-selector='active-filter']");
+        filter.presenceOfElementLocated(filterbanner, driver);
 
         return new SearchPage(driver);
     }
 
     public SearchPage assertYearFilterPresence (String yearvalue){
 
-        Assert.assertTrue(driver.findElement(By.xpath("//li[@data-qa-selector-value='"+yearvalue+"'and@data-qa-selector='active-filter']")).isDisplayed());
-        System.out.println("Assertion on year filter successful");
+        Assert.assertTrue(driver.findElement(By.xpath("//li[@data-qa-selector-value='"+yearvalue+"'and@data-qa-selector='active-filter']")).isDisplayed(), "Assertion on year filter wasn't successful");
 
         return new SearchPage(driver);
     }
 
     public SearchPage assertPriceFilterPresence (String pricevalue){
 
-        Assert.assertTrue(driver.findElement(By.xpath("//li[@data-qa-selector-value='"+pricevalue+"'and@data-qa-selector='active-filter']")).isDisplayed());
-        System.out.println("Assertion on price filter successful");
+        Assert.assertTrue(driver.findElement(By.xpath("//li[@data-qa-selector-value='"+pricevalue+"'and@data-qa-selector='active-filter']")).isDisplayed(), "Assertion on price filter wasn't successful");
 
         return new SearchPage(driver);
     }
